@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Counter from './Atom/Task Counters/taskcounter';
+import Display from './Atom/Task Display/taskdisplay';
+import Input from './Atom/Task Input/taskinput';
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className='App'> 
+
+<Counter/>
+<Display/>
+<Input/>
+
     </div>
+    </>
   );
 }
 
